@@ -10,7 +10,7 @@ from datetime import timedelta
 from flask_cors import CORS
 
 
-auth = Blueprint("auth", __name__, url_prefix="")
+auth = Blueprint("auth", __name__, url_prefix="/auth")
 cors = CORS(auth, resources={r"/*": {"origins": "*"}})
 
 
