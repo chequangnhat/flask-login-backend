@@ -1,1 +1,1 @@
-web: gunicorn --bind --preload 0.0.0.0:$PORT src.runner:application 
+web: gunicorn --bind --preload -b 0.0.0.0:$PORT src.runner:application 
